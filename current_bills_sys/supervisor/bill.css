@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.bill-container {
+    width: 800px;
+    margin: auto;
+    background: #fff;
+    border: 2px solid #000;
+    padding: 20px;
+}
+
+.bill-header {
+    text-align: center;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+}
+
+.bill-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.bill-header h2 {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.bill-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.bill-info p {
+    margin: 4px 0;
+}
+
+.reading-table,
+.amount-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.reading-table th,
+.reading-table td,
+.amount-table th,
+.amount-table td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+}
+
+.amount-table th {
+    background: #eee;
+}
+
+.bill-footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.bill-actions {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.bill-actions button,
+.bill-actions a {
+    padding: 8px 15px;
+    margin: 5px;
+    border: none;
+    background: gray;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.bill-actions button:hover,
+.bill-actions a:hover {
+    background: #444;
+}
+
+/* Print clean */
+@media print {
+    body {
+        background: #fff;
+    }
+    .bill-actions {
+        display: none;
+    }
+}
